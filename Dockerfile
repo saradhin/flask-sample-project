@@ -13,4 +13,4 @@ WORKDIR /app
 COPY ./app /app
 
 
-CMD python app.py run -h
+CMD python app.py 
