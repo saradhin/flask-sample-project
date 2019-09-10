@@ -1,5 +1,8 @@
-from app import app 
-import pytest
+from app.app import app
 
-def test_get_store():
-    assert app.get_store('mystore')['name'] == "mystore"
+
+def test_hello():
+    response = app.test_client().get('/')
+
+    assert response.status_code == 200
+    assert response.data == b'Hello World'

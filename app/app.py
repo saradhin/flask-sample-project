@@ -17,7 +17,7 @@ stores = [
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return ('Hello World')
 
 #POST /store date {name:}
 @app.route('/store', methods=['POST'])
